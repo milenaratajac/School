@@ -1,21 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package main;
 
-/**
- *
- * @author Milena
- */
+import student.Student;
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+        Student s = new Student ();
+          
+        s.setFirstName("Petar");
+        s.setLastName("Petrović");
+        s.setYearOfBirth(1990);
+        s.getCourse();
+        s.getComputer();
+        s.getComputer().setPrecessTact(4.0);
+        s.getComputer().setMemory(16.0);
+        s.getComputer().setHardDrive(2000);
+        s.getCourse().setName("QA");
+        s.getCourse().setNumberOfClasses(40);
+        s.getComputer().setOperatingSystem("Linux");
+        
+        s.info();
     
+}
 }

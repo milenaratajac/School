@@ -34,11 +34,9 @@ public class Course {
         this.numberOfClasses = numberOfClasses;
     }
     public void info (){
-        System.out.println("Naziv kursa: " + this.name);
-        System.out.println("Šifra kursa: " + this.codeName);
-        System.out.println("Broj časova: " + this.numberOfClasses);
+        System.out.println("Course name: " + this.name);
+        System.out.println("Code name " + this.codeName);
+        System.out.println("Course number of classes: " + this.numberOfClasses);
         System.out.println("");
-        
     }
-    
 }
